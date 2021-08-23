@@ -2,10 +2,10 @@ export const ADD_FAVORITE = 'ADD_FAVORITE';
 export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
 export const TOGGLE_DISPLAY_FAVORITE = 'TOGGLE_DISPLAY_FAVORITE';
 
-export const addFavorite = (movie) => {
+export const addFavorite = (id) => {
   return {
     type: ADD_FAVORITE,
-    payload: movie,
+    payload: id,
   };
 };
 
