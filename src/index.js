@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 // import reducer from './reducers';
-import { store } from './reducers/movieReducer';
+import { store } from './reducers/index';
 
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';

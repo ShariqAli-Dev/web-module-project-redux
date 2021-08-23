@@ -1,5 +1,14 @@
-import { combineReducers } from 'redux';
+import { createStore, combineReducers } from 'redux';
 
-import movieReducer from './movieReducer';
+import { movieReducer } from './movieReducer';
+import { favoriteReducer } from './favoriteReducer';
 
-export default movieReducer;
+const rootReducer = combineReducers({
+  movieReducer: movieReducer,
+  favoriteReducer: favoriteReducer,
+});
+
+export const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__?.()
+);
